@@ -7,7 +7,7 @@ const userRoutes = require("./routes/userRoutes");
 const newspaperRoutes = require("./routes/newspaperRoutes");
 require("dotenv").config();
 // Enable CORS for all routes
-dbConnect("mongodb://127.0.0.1:27017/newsMania").then(
+dbConnect("mongodb+srv://saloni:march16%402005@cluster0.aw8fg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(
   console.log("db connected")
 );
 
