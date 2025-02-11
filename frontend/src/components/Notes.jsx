@@ -22,7 +22,7 @@ export default function Notes() {
           return;
         }
 
-        const response = await fetch("http://localhost:8000/notes/fetch", {
+        const response = await fetch("https://news-mania-eta.vercel.app/notes/fetch", {
           method: "GET",
           headers: {
             "Authorization": `${token}`,

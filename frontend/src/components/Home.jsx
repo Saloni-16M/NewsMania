@@ -8,7 +8,7 @@ const Home = () => {
     useEffect(() => {
         const fetchNewspapers = async () => {
             try {
-                const response = await fetch('http://localhost:8000/api/newspapers'); // Adjust with your API URL
+                const response = await fetch('https://news-mania-eta.vercel.app/api/newspapers'); // Adjust with your API URL
                 const data = await response.json();
                 setNewspapers(data);
             } catch (error) {

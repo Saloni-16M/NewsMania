@@ -20,7 +20,10 @@ dbConnect(DB_CONNECT)
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  "origin":"https://news-mania-vhjp.vercel.app/",
+  "credentials":true
+}));
 
 const PORT = process.env.PORT || 5000;
 
