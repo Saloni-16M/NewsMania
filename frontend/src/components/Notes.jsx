@@ -55,7 +55,7 @@ export default function Notes() {
         return;
       }
 
-      const response = await fetch("http://localhost:8000/notes/create", {
+      const response = await fetch("https://news-mania-eta.vercel.app/notes/create", {
         method: "POST",
         headers: {
           "Authorization": `${token}`,
@@ -91,7 +91,7 @@ export default function Notes() {
     if (!selectedNote) return;
 
     try {
-      const response = await fetch(`http://localhost:8000/notes/update/${selectedNote._id}`, {
+      const response = await fetch(`https://news-mania-eta.vercel.app/notes/update/${selectedNote._id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -123,7 +123,7 @@ export default function Notes() {
   // Function to delete a note
   const deleteNote = async (id) => {
     try {
-      const response = await fetch(`http://localhost:8000/notes/delete/${id}`, {
+      const response = await fetch(`https://news-mania-eta.vercel.app/notes/delete/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

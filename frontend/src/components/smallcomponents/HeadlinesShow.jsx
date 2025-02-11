@@ -11,7 +11,7 @@ const HeadlinesShow = () => {
   const fetchHeadlines = async () => {
     setLoading(true);
     try {
-      const response = await fetch(`http://localhost:8000/api/headlines/${id}`);
+      const response = await fetch(`https://news-mania-eta.vercel.app/api/headlines/${id}`);
       const data = await response.json();
 
       if (data && data.length > 0) {
