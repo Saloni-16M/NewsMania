@@ -21,7 +21,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  "origin":"https://news-mania-vhjp.vercel.app/",
+  "origin":"https://news-mania-vhjp.vercel.app",
   "credentials":true
 }));
 
