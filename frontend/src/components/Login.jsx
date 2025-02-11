@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { Navigate, useNavigate ,Link} from "react-router-dom"; // Import useNavigate
 import "./Login.css";
+import Signup from "./Signup";
 
 const Login = ({ setIsLoggedIn }) => {
   const [formData, setFormData] = useState({
@@ -69,6 +70,8 @@ const Login = ({ setIsLoggedIn }) => {
           required
         />
         <button type="submit">Login</button>
+        Do not have an account? <Link to="/signup">Sign up</Link>
+
       </form>
     </div>
   );
